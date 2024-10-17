@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './calculator.css'
+import 'calculator.css'
 function Calculator() {
     const[monInvest,setMonInvest] =useState(null)
    const[rate,setRate] =useState(null)
