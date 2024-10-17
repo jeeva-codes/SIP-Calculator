@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --font-familypri: "Fredoka", sans-serif;
+    --font-weight:600;
+    --pri-color:rgb(235, 162, 26);
+    --sec-color:rgb(114, 82, 230);
+    --color3:green;
+    --color4:rgb(255, 166, 0);
+    --color5:rgb(0, 47, 255);
+    --color6:rgb(56, 164, 174);
+    --font-size:1.1em;
+    --line-space:1px;
+
+
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 75%;
+    height: 500px;
+    display: flex;
+    margin: auto;
+    border: 1px solid rgb(179, 178, 178);
+    border-radius: 10px;
+    
+}
+.img-container{
+    width: 50%;
+    height: 100%;
+    background-image: url('/public/img/transparent-piggy-bank-woman-saving-money-in-piggy-bank65ee70398884e6.2605078317101251135592.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .calculator-container{
+    width: 50%;
+    height: 100%;
+
+}
+.calculator-container h2{
+    font-family: var(--font-familypri);
+    font-weight: 600;
+    color:var(--pri-color);
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgb(255, 213, 0);
+    letter-spacing: 2px;
+}
+.calculator-container label{
+color: var(--sec-color);
+font-family: var(--font-familypri);
+font-weight: var(--font-weight);
+font-size: var(--font-size);
+letter-spacing: var(--line-space);
+
+}
+.input1,.input2,.input3{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2rem;  
+}
+.input1 label{
+    width: 60%;
+    letter-spacing: var(--line-space);
+
+}
+.input1 input{
+  width: 40%;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: .5px solid grey;
+  height: 25px;
+  padding: 5px;
+
+}
+.input2 label{
+    width: 60%;
+    letter-spacing: var(--line-space);
+
+}
+.input2 input{
+  width: 40%;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: .5px solid grey;
+  height: 25px;
+  padding: 5px;
+      
+}
+
+.input3 label{
+    width: 60%;
+    letter-spacing: var(--line-space);
+
+}
+.input3 input{
+  width: 40%;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: .5px solid grey;
+  height: 25px;
+  padding: 5px;
+}
+.btn-container{
+    width: 100%;
+    text-align: center;
+}
+#btn{
+    margin-top: 30px;
+    width: 100px;
+   align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: .375em;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #363636;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--font-familypri);
+  font-size: 1rem;
+  height: 2.5em;
+  justify-content: center;
+  line-height: 1.5;
+  padding: calc(.5em - 1px) 1em;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap; 
+  letter-spacing: var(--line-space);
+
+}
+#btn:hover{
+    border: 1px solid #bcbbbb;
+}
+
+
+
+.dis-container{
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+}
+.dis1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2rem;
+   margin-top: 8px;
+   font-size: var(--font-size);
+}
+.dis1 label{
+    width: 50%;
+    margin-left: 30px;
+   font-size: var(--font-size);
+   color: var(--color4);
+   letter-spacing: var(--line-space);
+
+}
+.dis1 h3{
+    padding-left: 30%;
+    width: 50%;
+   font-size: var(--font-size);
+   color: tomato;
+   letter-spacing: var(--line-space);
+}
+.dis1 h3::before{
+    content: '₹ ';
+}
+.dis2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2rem;
+   margin-top: 8px;
+   font-size: var(--font-size);
+
+}
+.dis2 label{
+    width: 50%;
+    margin-left: 30px;
+    font-size: var(--font-size);
+    color: var(--color4);
+    letter-spacing: var(--line-space);
+
+}
+.dis2 h3{
+    padding-left: 30%;
+    width: 50%;
+   font-size: var(--font-size);
+   color: var(--color3);
+   letter-spacing: var(--line-space);
+
+}
+.dis2 h3::before{
+    content: '₹ ';
+}
+
+.dis3{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2rem;
+   margin-top: 8px;
+   font-size: var(--font-size);
+   letter-spacing: var(--line-space);
+
+}
+.dis3 label{
+    width: 50%;
+    margin-left: 30px;
+    font-size: var(--font-size);
+    color: var(--color4);
+    letter-spacing: var(--line-space);
+
+}
+.dis3 h3{
+    padding-left: 30%;
+    width: 50%;
+    font-size: var(--font-size);
+    color: var(--color6);
+    letter-spacing: var(--line-space);
+
+}
+.dis3 h3::before{
+    content: '₹ ';
+}
+
+
+
+/* ===============resposive design ======*/
+
+@media (max-width:920px) {
+    .input1 {
+        display: block;
+        text-align: center;
+        height: auto;
+
+    }
+    .input1 label{
+        width: 100%;
+    }
+    .input1 input{
+        width: 60%;
+        margin: 0 20% 0 20%;
+       
+    }
+    .input2 {
+        display: block;
+        text-align: center;
+        height: auto;
+
+    }
+    .input2 label{
+        width: 100%;
+    }
+    .input2 input{
+        width: 60%;
+        margin: 0 20% 0 20%;
+    
+    }
+    .input3 {
+        display: block;
+        text-align: center;
+        height: auto;
+
+    }
+    .input3 label{
+        width: 100%;
+    }
+    .input3 input{
+        width: 60%;
+        margin: 0 20% 0 20%;
+        
+    }
+    .container{
+        height: 700px;
+    }
+   
+   .dis1,.dis2,.dis3{
+    display: block;
+   }
+   .dis1{
+    margin-bottom: 50px;
+   }
+   .dis1 label{
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-left: 0;
+   }
+   .dis1 h3{
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+   }
+   .dis2 label{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+   }
+   .dis2 h3{
+    width: 100%;
+    padding-left: 0%;
+    text-align: center;
+   }
+   .dis3 label{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+   }
+   .dis3 h3{
+    width: 100%;
+    padding-left: 0%;
+    text-align: center;
+   }
+}
